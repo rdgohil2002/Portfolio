@@ -12,21 +12,24 @@ const experiences = [
     role: "React Developer",
     description:
       "Developed responsive, reusable React components with Tailwind CSS, integrating APIs and ensuring clean, scalable code for user-friendly interfaces. Focused on performance, accessibility, and maintaining clean UI/UX across devices.",
-    period: "2022 - 2023",
+    period: "2024 - 2025",
     color: "from-pink-500 to-red-500",
   },
   {
-    role: "UI/UX Designer",
+    role: "Node Js Developer",
     description:
-      "Designed clean, accessible, and intuitive user interfaces focusing on user-centered design and modern aesthetic principles.",
-    period: "2021 - 2022",
+      "Engineered scalable backend services using Node.js and Express.js, implemented secure RESTful APIs, and managed data with MongoDB and Mongoose. Focused on performance optimization, API documentation, and deployment using cloud platforms like Render and Railway.",
+    period: "2024 - 2025",
     color: "from-green-500 to-emerald-500",
   },
 ];
 
 const ExperienceTimeline = () => {
   return (
-    <div className="min-h-screen w-full bg-slate-900 flex flex-col items-center justify-center px-4 py-12">
+    <section
+      id="experience"
+      className="min-h-screen w-full bg-slate-900 flex flex-col items-center justify-center px-4 py-12"
+    >
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
         Experience
       </h2>
@@ -52,7 +55,7 @@ const ExperienceTimeline = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

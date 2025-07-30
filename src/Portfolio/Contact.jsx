@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,13 +18,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Message sent successfully!");
+    toast.success("🎉 Message sent successfully!", {
+      position: "top-right",
+      // theme: "colored",
+    });
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div className="min-h-screen m-0 bg-slate-900 flex items-center justify-center px-4 py-8">
+    <section
+      id="contact"
+      className="min-h-screen m-0 bg-slate-900 flex items-center justify-center px-4 py-8"
+    >
       <div
         className="w-full max-w-sm bg-white/5 backdrop-blur-md rounded-xl shadow-lg p-4 border border-white/10"
         data-aos="zoom-in"
@@ -68,9 +75,10 @@ const Contact = () => {
           >
             Send
           </button>
+          <ToastContainer />
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -10,26 +10,29 @@ const projects = [
     title: "Chat App",
     description: "A real-time chat app using MERN stack and Socket.IO.",
     image: chatapp,
-    link: "#",
+    link: "https://github.com/rdgohil2002",
   },
   {
     title: "Gemini Clone",
     description:
-      "A full-featured e-commerce site with cart and payment gateway.",
+      "AI chatbot clone using MERN stack, and OpenAI API for smart responses. Includes JWT auth, conversation history, and a clean, responsive UI.",
     image: gemini,
-    link: "#",
+    link: "https://github.com/rdgohil2002",
   },
   {
     title: "Portfolio",
     description: "A modern portfolio built with React and Tailwind CSS.",
     image: portfolio,
-    link: "#",
+    link: "https://github.com/rdgohil2002",
   },
 ];
 
 const Project = () => {
   return (
-    <div className="min-h-screen w-full bg-slate-900 flex flex-col items-center justify-center px-4 py-10">
+    <section
+      id="project"
+      className="min-h-screen w-full bg-slate-900 flex flex-col items-center justify-center px-4 py-10"
+    >
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
         Projects
       </h2>
@@ -56,10 +59,11 @@ const Project = () => {
                 </p>
               </div>
               <a
+                style={{ textDecoration: "none" }}
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-block bg-indigo-500 hover:bg-indigo-600 transition text-white font-medium py-2 px-4 rounded-md text-center"
+                className="mt-auto inline-block bg-amber-600 hover:bg-amber-500 transition text-white font-medium py-2 px-4 rounded-md text-center"
               >
                 View Project
               </a>
@@ -67,7 +71,7 @@ const Project = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

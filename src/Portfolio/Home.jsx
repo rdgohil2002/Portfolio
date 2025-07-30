@@ -6,7 +6,10 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-black flex flex-col md:flex-row items-center justify-center p-6 gap-10">
+    <section
+      id="home"
+      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-black flex flex-col md:flex-row items-center justify-center p-6 gap-10"
+    >
       {/* Card Section */}
       <div className="w-full md:w-1/2 flex justify-center">
         <div className="bg-slate-900 rounded-2xl shadow-2xl max-w-md w-full transition hover:scale-[1.02]">
@@ -64,7 +67,7 @@ const Home = () => {
           className="mask mask-triangle relative rounded-full h-72 w-72 md:h-80 md:w-80 object-cover shadow-2xl border-4 border-amber-600"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

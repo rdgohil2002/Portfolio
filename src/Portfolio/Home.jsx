@@ -8,7 +8,9 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-black flex flex-col md:flex-row items-center justify-center p-6 gap-10"
+      className="min-h-screen bg-slate-900 flex flex-col md:flex-row items-center justify-center p-6 gap-10"
+
+      // bg-gradient-to-br from-slate-900 via-slate-900 to-black  ⬆️⬆️
     >
       {/* Card Section */}
       <div className="w-full md:w-1/2 flex justify-center">

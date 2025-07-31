@@ -51,7 +51,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen w-full bg-gradient-to-br from-slate-800 to-slate-900 flex flex-col items-center justify-start px-4 py-12 md:py-16"
+      className="min-h-screen w-full bg-slate-900 flex flex-col items-center justify-start px-4 py-12 md:py-16"
     >
       <h2
         className="text-3xl font-serif md:text-4xl font-bold text-white mb-8 md:mb-12 mt-8 md:mt-12"
